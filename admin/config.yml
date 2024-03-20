@@ -1,12 +1,13 @@
 backend:
-name: github
-repo: NoroffFEU/mmf-cms-decap
-branch: main
-base_url: https://decap-oauth-vercel.vercel.app
-auth_endpoint: /api/auth
+  name: github
+  repo: NoroffFEU/mmf-cms-decap
+  branch: main
+  base_url: https://decap-oauth-vercel.vercel.app
+  auth_endpoint: /api/auth
 
 media_folder: public/content/images
 public_folder: /public/content/images
+
 # backend:
 #   name: test-repo
 #   site_url: https://example.com
