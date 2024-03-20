@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: renayoo/Decap-test--CMS
+  repo: NoroffEU/mmf-cms-decap
   branch: main
   base_url: https://decap-oauth-vercel.vercel.app
   auth_endpoint: /api/auth
