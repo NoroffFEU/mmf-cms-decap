@@ -80,7 +80,7 @@ collections: # A list of collections the CMS should be able to edit
     label: 'The Children' # Used in the UI
     label_singular: 'The Children' # Used in the UI, ie: "New Post"
     description: >
-      This collection is for managing the children and their stories. Each post can be stored as a separate document or grouped based on categories or dates.
+      This collection is for the children and their stories. Each post can be stored as a separate document or grouped based on categories or dates.
     folder: '_theChildren'
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     summary: '{{title}} -- {{year}}/{{month}}/{{day}}'
