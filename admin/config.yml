@@ -76,8 +76,6 @@ collections: # A list of collections the CMS should be able to edit
       - { name: 'gallery', widget: 'image', choose_url: true, media_library: {config: {multiple: true, max_files: 999}}}
       - { name: 'post', widget: relation, collection: blogPost, multiple: true, search_fields: [ "title" ], display_fields: [ "title" ], value_field: "{{slug}}"}
 
-<<<<<<< Updated upstream
-=======
   - name: 'theChildren' # Used in routes, ie.: /admin/collections/:slug/edit
     label: 'The Children' # Used in the UI
     label_singular: 'The Children' # Used in the UI, ie: "New Post"
@@ -108,7 +106,6 @@ collections: # A list of collections the CMS should be able to edit
       - { name: 'gallery', widget: 'image', choose_url: true, media_library: {config: {multiple: true, max_files: 999}}}
       - { name: 'post', widget: relation, collection: blogPost, multiple: true, search_fields: [ "title" ], display_fields: [ "title" ], value_field: "{{slug}}"}
 
->>>>>>> Stashed changes
   - name: 'ourSupport' # Used in routes, ie.: /admin/collections/:slug/edit
     label: 'Our Support' # Used in the UI
     label_singular: 'Our Support' # Used in the UI, ie: "New Post"
