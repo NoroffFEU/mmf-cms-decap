@@ -8,14 +8,6 @@ backend:
 media_folder: public/content/images
 public_folder: /public/content/images
 
-# backend:
-#   name: test-repo
-#   site_url: https://example.com
-#   publish_mode: editorial_workflow
-#   media_folder: assets/uploads
-#   media_library:
-#     name: testing
-
 collections: # A list of collections the CMS should be able to edit
   - name: 'blogPost' # Used in routes, ie.: /admin/collections/:slug/edit
     label: 'Blog Post' # Used in the UI
