@@ -8,21 +8,54 @@ backend:
 media_folder: public/content/images
 public_folder: /public/content/images
 
-# backend:
-#   name: test-repo
-#   site_url: https://example.com
-#   publish_mode: editorial_workflow
-#   media_folder: assets/uploads
-#   media_library:
-#     name: testing
-
 collections: # A list of collections the CMS should be able to edit
+  - name: 'posts' # Used in routes, ie.: /admin/collections/:slug/edit
+    label: 'Posts' # Used in the UI
+    description: >
+      All your posts is nested here.
+    folder: 'posts'
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    summary: '{{title}} -- {{year}}/{{month}}/{{day}}'
+    view_filters:
+      - label: Posts With Index
+        field: title
+        pattern: 'This is post #'
+      - label: Posts Without Index
+        field: title
+        pattern: front matter post
+      - label: Drafts
+        field: draft
+        pattern: true
+    view_groups:
+      - label: Year
+        field: date
+        pattern: \d{4}
+      - label: Drafts
+        field: draft
+    fields: # The fields each document in this collection have
+      - { label: 'Title', name: 'title', widget: 'string', tagname: 'h1' }
+      - { label: 'Draft', name: 'draft', widget: 'boolean', default: false }
+      - {
+          label: 'Publish Date',
+          name: 'date',
+          widget: 'datetime',
+          date_format: 'YYYY-MM-DD',
+          time_format: 'HH:mm',
+          format: 'YYYY-MM-DD HH:mm',
+        }
+      - label: 'Cover Image'
+        name: 'image'
+        widget: 'image'
+        required: false
+        tagname: ''
+
+      - { label: 'Body', name: 'body', widget: 'markdown', hint: 'Main content goes here.' }
   - name: 'blogPost' # Used in routes, ie.: /admin/collections/:slug/edit
     label: 'Blog Post' # Used in the UI
-    label_singular: 'Post' # Used in the UI, ie: "New Post"
+    label_singular: 'Blog Post' # Used in the UI, ie: "New Post"
     description: >
       Create your blog posts covering a variety of topics to inform, inspire, and engage your readers.
-    folder: '_posts'
+    folder: 'posts/blogPost'
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     summary: '{{title}} -- {{year}}/{{month}}/{{day}}'
     create: true # Allow users to create new documents in this collection
@@ -63,10 +96,25 @@ collections: # A list of collections the CMS should be able to edit
 
   - name: 'ourWork' # Used in routes, ie.: /admin/collections/:slug/edit
     label: 'Our Work' # Used in the UI
-    label_singular: 'Our Work' # Used in the UI, ie: "New Post"
+    label_singular: 'Our Work Post' # Used in the UI, ie: "New Post"
     description: >
       This collection is for managing our work. Each post can be stored as a separate document or grouped based on categories or dates.
-    folder: '_ourWork'
+    folder: 'posts/ourWork'
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    summary: '{{title}} -- {{year}}/{{month}}/{{day}}'
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - { label: 'Title', name: 'title', widget: 'string', tagname: 'h1' }
+      - { label: 'Body', name: 'body', widget: 'markdown', hint: 'Main content goes here.' }
+      - { name: 'gallery', widget: 'image', choose_url: true, media_library: {config: {multiple: true, max_files: 999}}}
+      - { name: 'post', widget: relation, collection: blogPost, multiple: true, search_fields: [ "title" ], display_fields: [ "title" ], value_field: "{{slug}}"}
+  
+  - name: 'theChildren' # Used in routes, ie.: /admin/collections/:slug/edit
+    label: 'The Children' # Used in the UI
+    label_singular: 'Children Post' # Used in the UI, ie: "New Post"
+    description: >
+      This collection is for the children and their stories. Each post can be stored as a separate document or grouped based on categories or dates.
+    folder: 'posts/theChildren'
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     summary: '{{title}} -- {{year}}/{{month}}/{{day}}'
     create: true # Allow users to create new documents in this collection
@@ -76,13 +124,12 @@ collections: # A list of collections the CMS should be able to edit
       - { name: 'gallery', widget: 'image', choose_url: true, media_library: {config: {multiple: true, max_files: 999}}}
       - { name: 'post', widget: relation, collection: blogPost, multiple: true, search_fields: [ "title" ], display_fields: [ "title" ], value_field: "{{slug}}"}
 
-
   - name: 'ourEmployees' # Used in routes, ie.: /admin/collections/:slug/edit
     label: 'Our Employees' # Used in the UI
-    label_singular: 'Our Employees' # Used in the UI, ie: "New Post"
+    label_singular: 'Employee Post' # Used in the UI, ie: "New Post"
     description: >
       This collection is for managing our employees. Each post can be stored as a separate document or grouped based on categories or dates.
-    folder: '_ourEmployees'
+    folder: 'posts/ourEmployees'
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     summary: '{{title}} -- {{year}}/{{month}}/{{day}}'
     create: true # Allow users to create new documents in this collection
@@ -94,10 +141,10 @@ collections: # A list of collections the CMS should be able to edit
 
   - name: 'ourSupport' # Used in routes, ie.: /admin/collections/:slug/edit
     label: 'Our Support' # Used in the UI
-    label_singular: 'Our Support' # Used in the UI, ie: "New Post"
+    label_singular: 'Support Post' # Used in the UI, ie: "New Post"
     description: >
       This collection is for managing our supporters. Each post can be stored as a separate document or grouped based on categories or dates.
-    folder: '_ourSupport'
+    folder: 'posts/ourSupport'
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     summary: '{{title}} -- {{year}}/{{month}}/{{day}}'
     create: true # Allow users to create new documents in this collection
