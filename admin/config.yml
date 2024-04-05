@@ -323,14 +323,22 @@ collections: # A list of collections the CMS should be able to edit
       - { label: 'Images', name: 'images', widget: 'image', choose_url: true, media_library: {config: {multiple: true, max_files: 999}}}
       - { label: 'Related Posts', name: 'related_posts', widget: 'relation', collection: 'blogPost', multiple: true, search_fields: ['title'], display_fields: ['title'], value_field: '{{slug}}'}
 
+  
   - name: 'about Us' 
     label: 'About Us' 
+    description: >
+      This collection is for About us. Each item can be stored as a separate document.
     folder: 'about_us' 
     create: false 
-    fields: [] 
+    fields: 
+     - { label: 'Title', name: 'title', widget: 'string' }
+    nested: 
+      depth: 1
 
   - name: 'about MMF' 
     label: 'about MMF'
+    description: >
+      This collection is for About MMF. Each item can be stored as a separate document.
     folder: 'about_us/about_mmf'
     create: true 
     fields: 
@@ -339,6 +347,8 @@ collections: # A list of collections the CMS should be able to edit
 
   - name: 'Our history'
     label: 'Our history' 
+    description: >
+      This collection is about Our history. Each item can be stored as a separate document.
     folder: 'about_us/our_history'
     create: true 
     fields: 
@@ -347,6 +357,8 @@ collections: # A list of collections the CMS should be able to edit
 
   - name: 'The employees' 
     label: 'The employees' 
+    description: >
+      This collection is for the employees. Each item can be stored as a separate document.
     folder: 'about_us/the_employees' 
     create: true 
     fields: 
@@ -356,9 +368,18 @@ collections: # A list of collections the CMS should be able to edit
 
   - name: 'Funds'
     label: 'Where do we get funds from?' 
+    description: >
+      This collection is about information where we get funds. Each item can be stored as a separate document.
     folder: 'about_us/funds' 
     create: true 
     fields: 
       - { label: 'Source', name: 'source', widget: 'string' }
-      - { label: 'Description', name: 'description', widget: 'markdown', hint: 'Description of funding source.' }    
+      - { label: 'Description', name: 'description', widget: 'markdown', hint: 'Description of funding source.' } 
+
+   
+ 
+  
+
+  
+
   
