@@ -321,8 +321,6 @@ collections: # A list of collections the CMS should be able to edit
       - { label: 'Title', name: 'title', widget: 'string', tagname: 'h1' }
       - { label: 'Description', name: 'body', widget: 'markdown', hint: 'Description of the gallery item.' }
       - { label: 'Images', name: 'images', widget: 'image', choose_url: true, media_library: {config: {multiple: true, max_files: 999}}}
-      - { label: 'Related Posts', name: 'related_posts', widget: 'relation', collection: 'blogPost', multiple: true, search_fields: ['title'], display_fields: ['title'], value_field: '{{slug}}'}
-
   
   - name: 'about Us' 
     label: 'About Us' 
