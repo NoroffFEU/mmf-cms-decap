@@ -192,12 +192,7 @@ collections: # A list of collections the CMS should be able to edit
     fields: 
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown', hint: 'Main content goes here.' }       
-  
-
-
-
- 
-
+      
   - name: 'theChildren' # Used in routes, ie.: /admin/collections/:slug/edit
     label: 'The Children' # Used in the UI
     label_singular: 'Children Post' # Used in the UI, ie: "New Post"
@@ -464,6 +459,19 @@ collections: # A list of collections the CMS should be able to edit
     fields: 
       - { label: 'Source', name: 'source', widget: 'string' }
       - { label: 'Description', name: 'description', widget: 'markdown', hint: 'Description of funding source.' } 
+
+  - name: 'Meet the kids' 
+    label: 'Meet the kids'
+    description: >
+      This collection is for Stories from some of the children. Each item can be stored as a separate document.
+    folder: 'posts/meet_the_kids'
+    create: true 
+    fields: 
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown', hint: 'Main content goes here.' }  
+
+ 
+
 
   
 
