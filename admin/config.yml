@@ -470,7 +470,47 @@ collections: # A list of collections the CMS should be able to edit
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown', hint: 'Main content goes here.' }  
 
- 
+  - name: 'Support Us' 
+    label: 'support Us' 
+    description: >
+      This collection is for support us. Each item can be stored as a separate document.
+    folder: 'support_us' 
+    create: false 
+    fields: 
+     - { label: 'Title', name: 'title', widget: 'string' }
+    nested: 
+      depth: 1   
+
+  - name: 'What is the support for?' 
+    label: 'What is the support for?'
+    description: >
+      This collection is for What is the support for?. Each item can be stored as a separate document.
+    folder: 'support_us/What is the support for?'
+    create: true 
+    fields: 
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown', hint: 'Main content goes here.' }    
+  
+  - name: 'Ways to support' 
+    label: 'Ways to support'
+    description: >
+      This collection is for Ways to support. Each item can be stored as a separate document.
+    folder: 'support_us/Ways_to_support'
+    create: true 
+    fields: 
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown', hint: 'Main content goes here.' }    
+
+  - name: 'Volunteer in MMF' 
+    label: 'Volunteer in MMF'
+    description: >
+      This collection is for Volunteer in MMF. Each item can be stored as a separate document.
+    folder: 'support_us/Volunteer_in_MMF'
+    create: true 
+    fields: 
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown', hint: 'Main content goes here.' }        
+
 
 
   
