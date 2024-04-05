@@ -511,7 +511,16 @@ collections: # A list of collections the CMS should be able to edit
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown', hint: 'Main content goes here.' }        
 
-
+  - name: 'Contact Us' 
+    label: 'Contact Us'
+    description: >
+      This collection is about how to contact us. Each item can be stored as a separate document.
+    folder: 'contact_us'
+    create: true 
+    fields: 
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown', hint: 'Main content goes here.' }        
+    
 
   
 
