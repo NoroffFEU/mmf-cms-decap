@@ -13,7 +13,7 @@ collections: # A list of collections the CMS should be able to edit
     label: 'Posts' # Used in the UI
     description: >
       All your posts is nested here.
-    folder: 'posts'
+    folder: '_posts'
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     summary: '{{title}} -- {{year}}/{{month}}/{{day}}'
     view_filters:
