@@ -94,6 +94,8 @@ collections: # A list of collections the CMS should be able to edit
 
       - { label: 'Body', name: 'body', widget: 'markdown', hint: 'Main content goes here.' }
 
+   
+
   - name: 'ourWork' # Used in routes, ie.: /admin/collections/:slug/edit
     label: 'Our Work' # Used in the UI
     label_singular: 'Our Work Post' # Used in the UI, ie: "New Post"
@@ -108,7 +110,94 @@ collections: # A list of collections the CMS should be able to edit
       - { label: 'Body', name: 'body', widget: 'markdown', hint: 'Main content goes here.' }
       - { name: 'gallery', widget: 'image', choose_url: true, media_library: {config: {multiple: true, max_files: 999}}}
       - { name: 'post', widget: relation, collection: blogPost, multiple: true, search_fields: [ "title" ], display_fields: [ "title" ], value_field: "{{slug}}"}
+    nested: 
+      depth: 1  
+
+  - name: 'Health Care' 
+    label: 'Health Care'
+    description: >
+      This collection is for Health care. Each item can be stored as a separate document.
+    folder: 'ourWork/health_care'
+    create: true 
+    fields: 
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown', hint: 'Main content goes here.' }     
+
+  - name: 'Schooling' 
+    label: 'Schooling'
+    description: >
+      This collection is for Schooling. Each item can be stored as a separate document.
+    folder: 'ourWork/schooling'
+    create: true 
+    fields: 
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown', hint: 'Main content goes here.' }    
+
+  - name: 'The housing situation' 
+    label: 'The housing situation'
+    description: >
+      This collection is for The housing situation. Each item can be stored as a separate document.
+    folder: 'ourWork/housing_situation'
+    create: true 
+    fields: 
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown', hint: 'Main content goes here.' }  
+
+  - name: 'Food delivery' 
+    label: 'Food delivery'
+    description: >
+      This collection is for Food delivery. Each item can be stored as a separate document.
+    folder: 'ourWork/food_delivery'
+    create: true 
+    fields: 
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown', hint: 'Main content goes here.' } 
+
+  - name: 'Music lessons' 
+    label: 'Music lessons'
+    description: >
+      This collection is for Music lessons. Each item can be stored as a separate document.
+    folder: 'ourWork/music_lessons'
+    create: true 
+    fields: 
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown', hint: 'Main content goes here.' }   
+
+  - name: 'Cooperation with the children' 
+    label: 'Cooperation with the children'
+    description: >
+      This collection is for Cooperation with the children. Each item can be stored as a separate document.
+    folder: 'ourWork/Cooperation_with_the_children'
+    create: true 
+    fields: 
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown', hint: 'Main content goes here.' }  
+
+  - name: 'Activities' 
+    label: 'Activities'
+    description: >
+      This collection is for Activities. Each item can be stored as a separate document.
+    folder: 'ourWork/Activities'
+    create: true 
+    fields: 
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown', hint: 'Main content goes here.' }    
+
+  - name: 'Goals for the future' 
+    label: 'Goals for the future'
+    description: >
+      This collection is for Goals for the future. Each item can be stored as a separate document.
+    folder: 'ourWork/Goals_for_the_future'
+    create: true 
+    fields: 
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown', hint: 'Main content goes here.' }       
   
+
+
+
+ 
+
   - name: 'theChildren' # Used in routes, ie.: /admin/collections/:slug/edit
     label: 'The Children' # Used in the UI
     label_singular: 'Children Post' # Used in the UI, ie: "New Post"
@@ -373,6 +462,10 @@ collections: # A list of collections the CMS should be able to edit
     fields: 
       - { label: 'Source', name: 'source', widget: 'string' }
       - { label: 'Description', name: 'description', widget: 'markdown', hint: 'Description of funding source.' } 
+
+  
+
+
 
    
  
