@@ -94,8 +94,6 @@ collections: # A list of collections the CMS should be able to edit
 
       - { label: 'Body', name: 'body', widget: 'markdown', hint: 'Main content goes here.' }
 
-   
-
   - name: 'ourWork' # Used in routes, ie.: /admin/collections/:slug/edit
     label: 'Our Work' # Used in the UI
     label_singular: 'Our Work Post' # Used in the UI, ie: "New Post"
@@ -193,21 +191,6 @@ collections: # A list of collections the CMS should be able to edit
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown', hint: 'Main content goes here.' }       
       
-  - name: 'theChildren' # Used in routes, ie.: /admin/collections/:slug/edit
-    label: 'The Children' # Used in the UI
-    label_singular: 'Children Post' # Used in the UI, ie: "New Post"
-    description: >
-      This collection is for the children and their stories. Each post can be stored as a separate document or grouped based on categories or dates.
-    folder: 'posts/theChildren'
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
-    summary: '{{title}} -- {{year}}/{{month}}/{{day}}'
-    create: true # Allow users to create new documents in this collection
-    fields: # The fields each document in this collection have
-      - { label: 'Title', name: 'title', widget: 'string', tagname: 'h1' }
-      - { label: 'Body', name: 'body', widget: 'markdown', hint: 'Main content goes here.' }
-      - { name: 'gallery', widget: 'image', choose_url: true, media_library: {config: {multiple: true, max_files: 999}}}
-      - { name: 'post', widget: relation, collection: blogPost, multiple: true, search_fields: [ "title" ], display_fields: [ "title" ], value_field: "{{slug}}"}
-
   - name: 'ourEmployees' # Used in routes, ie.: /admin/collections/:slug/edit
     label: 'Our Employees' # Used in the UI
     label_singular: 'Employee Post' # Used in the UI, ie: "New Post"
@@ -459,23 +442,13 @@ collections: # A list of collections the CMS should be able to edit
     fields: 
       - { label: 'Source', name: 'source', widget: 'string' }
       - { label: 'Description', name: 'description', widget: 'markdown', hint: 'Description of funding source.' } 
-
-  - name: 'Meet the kids' 
-    label: 'Meet the kids'
-    description: >
-      This collection is for Stories from some of the children. Each item can be stored as a separate document.
-    folder: 'posts/meet_the_kids'
-    create: true 
-    fields: 
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Body', name: 'body', widget: 'markdown', hint: 'Main content goes here.' }  
-
+ 
   - name: 'Support Us' 
     label: 'support Us' 
     description: >
       This collection is for support us. Each item can be stored as a separate document.
     folder: 'support_us' 
-    create: false 
+    create: false
     fields: 
      - { label: 'Title', name: 'title', widget: 'string' }
     nested: 
@@ -509,8 +482,9 @@ collections: # A list of collections the CMS should be able to edit
     create: true 
     fields: 
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Body', name: 'body', widget: 'markdown', hint: 'Main content goes here.' }        
-
+      - { label: 'Body', name: 'body', widget: 'markdown', hint: 'Main content goes here.' }      
+ 
+  
   - name: 'Contact Us' 
     label: 'Contact Us'
     description: >
