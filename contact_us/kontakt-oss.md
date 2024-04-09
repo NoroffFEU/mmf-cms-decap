@@ -27,8 +27,6 @@ Thea Harbo
 
 mmf.thea@gmail.com 
 
-Det er også ønskelig med direkte koblinger til våre sosiale medier. Både på fremsiden og under kategorien kontakt oss om det er mulig: 
-
 Instagram: musikkforandrerliv 
 
 Facebook: Mozika Manova- Fiainana - Musikk Forandrer- Liv
