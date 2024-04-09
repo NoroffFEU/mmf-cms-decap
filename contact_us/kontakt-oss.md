@@ -1,7 +1,7 @@
 ---
 title: Kontakt oss
 ---
-Leder Madagaskar:
+**Leder Madagaskar:**
 
 Dina Andriamanalina 
 
@@ -9,24 +9,32 @@ dina7dina@yahoo.co.uk
 
 Phone number/Whatsapp: +261 347889977
 
-Leder: 
+
+
+**Leder:** 
 
 Eline Rodvelt Hansen 
 
 Elinerodvelt@gmail.com
 
-Nestleder: 
+
+
+**Nestleder:** 
 
 Karoline Hartvigsen 
 
 mmf.karoline@gmail.com 
 
-Styremedlem: 
+
+
+**Styremedlem:** 
 
 Thea Harbo 
 
 mmf.thea@gmail.com 
 
-Instagram: musikkforandrerliv 
 
-Facebook: Mozika Manova- Fiainana - Musikk Forandrer- Liv
+
+**Instagram: musikkforandrerliv** 
+
+**Facebook: Mozika Manova- Fiainana - Musikk Forandrer- Liv**
