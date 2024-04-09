@@ -1,8 +1,9 @@
 ---
-name: Thea Harbo
+name: Mino
 position: ansatte
 bio: >-
-  
+  Mino følger opp skolearbeidet og hjelper til med lekser for de eldre barna.
 
-  Thea fullførte sin bachelor i sykepleie i 2017, på høyskolen Diakonova i Oslo. Der bodde hun i 9 år, før hun flyttet tilbake til hjembyen sin, Stavanger. Hun har jobberfaring fra hjemmesykepleien, flere år på en barneavdeling på Rikshospitalet, og jobber nå i en særskilt tilrettelagt avdeling i barnehage. Hun har mye erfaring med å jobbe sammen med barn, og trives godt med det. Thea er styremedlem i MMF og har blant annet økonomiansvar i organisasjonen. Hun er også med på å ha ansvar for arbeidet som gjøres i Norge.
+
+  Han har særlig ansvar for barna som skal ta en nasjonal eksamen. Han har i tillegg ansvar for instrumenter og utstyr i lokalet vårt. Mino lager oversikt over alt av utstyr/ instrumenter MMF har, og har kontroll over dette.
 ---
