@@ -497,7 +497,7 @@ collections: # A list of collections the CMS should be able to edit
     fields: 
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown', hint: 'Main content goes here.' }   
-      - { label: 'Language', name: 'language', widget: 'select', options: ['English', 'Norsk', 'French', Madagasi] }     
+      
     
 
   
