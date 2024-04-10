@@ -1,6 +1,6 @@
 ---
 name: Mino
-position: ansatte
+position: Ansatt
 bio: >-
   Mino følger opp skolearbeidet og hjelper til med lekser for de eldre barna.
 
