@@ -346,8 +346,8 @@ collections:
     nested: 
       depth: 1
 
-  - name: 'about MMF' 
-    label: 'about MMF'
+  - name: 'About MMF' 
+    label: 'About MMF'
     description: >
       This collection is for About MMF. Each item can be stored as a separate document.
     folder: 'about_us/about_mmf'
@@ -390,7 +390,7 @@ collections:
  
  
   - name: 'Support Us' 
-    label: 'support Us' 
+    label: Support Us' 
     description: >
       This collection is for support us. Each item can be stored as a separate document.
     folder: 'support_us' 
@@ -404,7 +404,7 @@ collections:
     label: 'What is the support for?'
     description: >
       This collection is for What is the support for?. Each item can be stored as a separate document.
-    folder: 'support_us/What is the support for?'
+    folder: 'support_us/What_is_the_support_for?'
     create: true 
     fields: 
       - { label: 'Title', name: 'title', widget: 'string' }
