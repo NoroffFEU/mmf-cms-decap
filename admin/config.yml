@@ -10,7 +10,7 @@ public_folder: /public/content/images
 
 i18n:
   structure: single_file
-  locales: {en: English, nb: Norwegian, fr: French, mg: Malagasy}
+  locales: [en, nb, fr, mg]
   default_locale: en
 
 collections: 
