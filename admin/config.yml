@@ -443,6 +443,7 @@ collections: # A list of collections the CMS should be able to edit
       - { label: 'Source', name: 'source', widget: 'string' }
       - { label: 'Description', name: 'description', widget: 'markdown', hint: 'Description of funding source.' } 
  
+ 
   - name: 'Support Us' 
     label: 'support Us' 
     description: >
@@ -463,6 +464,7 @@ collections: # A list of collections the CMS should be able to edit
     fields: 
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown', hint: 'Main content goes here.' }    
+      
   
   - name: 'Ways to support' 
     label: 'Ways to support'
@@ -473,6 +475,7 @@ collections: # A list of collections the CMS should be able to edit
     fields: 
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown', hint: 'Main content goes here.' }    
+    
 
   - name: 'Volunteer in MMF' 
     label: 'Volunteer in MMF'
@@ -482,7 +485,8 @@ collections: # A list of collections the CMS should be able to edit
     create: true 
     fields: 
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Body', name: 'body', widget: 'markdown', hint: 'Main content goes here.' }      
+      - { label: 'Body', name: 'body', widget: 'markdown', hint: 'Main content goes here.' } 
+           
  
   
   - name: 'Contact Us' 
@@ -493,7 +497,8 @@ collections: # A list of collections the CMS should be able to edit
     create: true 
     fields: 
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Body', name: 'body', widget: 'markdown', hint: 'Main content goes here.' }        
+      - { label: 'Body', name: 'body', widget: 'markdown', hint: 'Main content goes here.' }   
+      - { label: 'Language', name: 'language', widget: 'select', options: ['English', 'Norsk', 'French', Madagasi] }     
     
 
   
