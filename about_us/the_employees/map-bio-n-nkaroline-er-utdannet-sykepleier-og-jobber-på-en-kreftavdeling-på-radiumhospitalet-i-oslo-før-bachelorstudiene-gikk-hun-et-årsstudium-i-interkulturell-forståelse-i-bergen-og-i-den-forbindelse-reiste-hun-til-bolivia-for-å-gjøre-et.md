@@ -1,6 +1,6 @@
 ---
 name: Karoline Hartvigsen
-position: nestleder styre
+position: Nestleder i styret
 bio: >-
   
 
