@@ -390,7 +390,7 @@ collections:
  
  
   - name: 'Support Us' 
-    label: Support Us' 
+    label: 'Support Us' 
     description: >
       This collection is for support us. Each item can be stored as a separate document.
     folder: 'support_us' 
@@ -400,8 +400,8 @@ collections:
     nested: 
       depth: 1   
 
-  - name: 'What is the support for' 
-    label: 'What is the support for'
+  - name: 'What is the support for?' 
+    label: 'What is the support for?'
     description: >
       This collection is for What is the support for?. Each item can be stored as a separate document.
     folder: 'support_us/What_is_the_support_for'
