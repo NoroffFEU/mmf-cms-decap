@@ -1,6 +1,6 @@
 ---
 name: Thea Harbo
-position: ansatte
+position: Ansatt
 bio: >-
   
 
