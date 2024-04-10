@@ -430,6 +430,7 @@ collections: # A list of collections the CMS should be able to edit
       - { label: 'Name', name: 'name', widget: 'string' }
       - { label: 'Position', name: 'position', widget: 'string' }
       - { label: 'Bio', name: 'bio', widget: 'markdown', hint: 'Employee bio.' }
+      - { label: 'Cover Image', name: 'image', widget: 'image', required: false, tagname: '' }
 
   - name: 'Funds'
     label: 'Where do we get funds from?' 
