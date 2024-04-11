@@ -109,7 +109,7 @@ collections:
   - name: 'Nutrition' 
     label: 'Nutrition'
     description: >
-      This collection is for Food delivery. Each item can be stored as a separate document.
+      This collection is for Nutrition. Each item can be stored as a separate document.
     folder: 'ourWork/food_delivery'
     create: true 
     fields: 
@@ -156,20 +156,6 @@ collections:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown', hint: 'Main content goes here.' }       
 
-  - name: 'ourSupport' 
-    label: 'Our Support' 
-    label_singular: 'Support Post'
-    description: >
-      This collection is for managing our supporters. Each post can be stored as a separate document or grouped based on categories or dates.
-    folder: 'posts/ourSupport'
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
-    summary: '{{title}} -- {{year}}/{{month}}/{{day}}'
-    create: true 
-    fields: # The fields each document in this collection have
-      - { label: 'Title', name: 'title', widget: 'string', tagname: 'h1' }
-      - { label: 'Body', name: 'body', widget: 'markdown', hint: 'Main content goes here.' }
-      - { name: 'gallery', widget: 'image', choose_url: true, media_library: {config: {multiple: true, max_files: 999}}}
-      - { name: 'post', widget: relation, collection: blogPost, multiple: true, search_fields: [ "title" ], display_fields: [ "title" ], value_field: "{{slug}}"}
 
   - name: 'events' 
     label: 'News/Events'
