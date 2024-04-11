@@ -106,8 +106,8 @@ collections:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown', hint: 'Main content goes here.' }  
 
-  - name: 'Food delivery' 
-    label: 'Food delivery'
+  - name: 'Nutrition' 
+    label: 'Nutrition'
     description: >
       This collection is for Food delivery. Each item can be stored as a separate document.
     folder: 'ourWork/food_delivery'
