@@ -1,12 +1,6 @@
 ---
 title: Støtt oss
 ---
-Hva går støtten til? 
+Hva går støtten til?
 
-
-
-Støtten vi får fra våre givere går til å dekke alt av mat, klær, skolegang, utstyr, helsehjelp, medisiner og tannlege til barna, samt drift av musikkskolen og lønninger til våre ansatte. Barnas familier støttes også etter egne avtaler og individuelle behov. Vi jobber stadig med å forbedre bosituasjonen til barna, og bruker mye av overskuddet vi har til å reparere hus og hjem.
-
-
-
-Takket være din gave, kan vi sammen hjelpe flere barn som lever et tøft liv på gaten ut av fattigdom.
+Støtten fra våre givere brukes til å dekke alle utgifter knyttet til mat, klær, skolegang, utstyr, helsehjelp, medisiner og tannbehandling for barna. I tillegg går midlene til drift av musikkskolen og lønninger for våre ansatte. Vi støtter også barnas familier etter individuelle avtaler og behov. Vi jobber kontinuerlig med å forbedre bomiljøet for barna, og en stor del av overskuddet brukes til å reparere hus og hjem. Takket være din gave kan vi sammen hjelpe flere barn ut av fattigdom og bort fra et tøft liv på gaten.
