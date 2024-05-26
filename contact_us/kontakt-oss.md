@@ -9,15 +9,11 @@ dina7dina@yahoo.co.uk
 
 Phone number/Whatsapp: +261 347889977
 
-
-
 **Leder:** 
 
 Eline Rodvelt Hansen 
 
-Elinerodvelt@gmail.com
-
-
+elinerodvelt@gmail.com
 
 **Nestleder:** 
 
@@ -25,15 +21,11 @@ Karoline Hartvigsen
 
 mmf.karoline@gmail.com 
 
-
-
 **Styremedlem:** 
 
 Thea Harbo 
 
 mmf.thea@gmail.com 
-
-
 
 **Instagram: musikkforandrerliv** 
 
