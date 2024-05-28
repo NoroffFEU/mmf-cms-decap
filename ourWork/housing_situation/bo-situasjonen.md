@@ -1,5 +1,5 @@
 ---
-title: Bo situasjonen
+title: Bosituasjonen
 ---
 Mange av barna vi tar inn som elever i MMF, bor på gaten når vi blir kjent med dem. Grunnen til at de bor på gaten er fattigdom. Barna blir overlatt til seg selv, og eldre barn får ofte ansvar for yngre barn. Hverdagen på gata er ekstremt tøff, og hver dag er en kamp for å overleve. På dagtid bruker barna mye krefter på å tigge etter penger og lete etter mat. Når mørket nærmer seg, er det viktig å finne et trygt sted å sove for natten. Nettene kan være kalde og farlige, og barna ligger tett inntil hverandre for å holde på kroppsvarmen. 
 
